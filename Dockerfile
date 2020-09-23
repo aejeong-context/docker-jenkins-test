@@ -1,10 +1,17 @@
-FROM ubuntu:18.04
-MAINTAINER AEJEONG SHIN <aejeong-context@kakao.com>
+FROM openjdk:11-jdk-slim
 
-RUN apt-get update
-RUN apt-get install -y apache2 # Install Apache web server (Only 'yes')
+# Add a volume to /tmp
+VOLUME /tmp
 
-EXPOSE 80
+# Make port 8080 available to the world outside this container
+EXPOSE 8080
 
-CMD ["apachectl","-D","FOREGROUND"]
-~                                   
+# The application's jar file
+ARG JAR_FILE=build/libs/pushtest-1.0-SNAPSHOT.jar
+
+# Add the application's jar to the container
+ADD ${JAR_FILE} pushtest.jar
+
+# Run the jar file
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/to-do-springboot.jar"]
+
