@@ -9,11 +9,11 @@ public class HomeController {
     @GetMapping("/")
     public String home(){
         System.out.println("aejeong!!!!!");
-        return "hello~~~~~~~~~~~~~~~~~";
+        return "hello~~~~~~~~~~~~~~~~~qqqqq";
     }
     @GetMapping("/aejeong")
     public String ae(){
         System.out.println("gggg");
-        return "ㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ";
+        return "ㅎㅎㅎㅎㅎㅎㅎqqqㅎㅎㅎㅎ";
     }
 }
