@@ -9,6 +9,6 @@ public class HomeController {
     @GetMapping("/")
     public String home(){
         System.out.println("aejeong!!!!!");
-        return "hello";
+        return "hello~~~~~~~~~~~~~~~~~";
     }
 }
