@@ -13,5 +13,5 @@ ARG JAR_FILE=build/libs/pushtest-1.0-SNAPSHOT.jar
 ADD ${JAR_FILE} pushtest.jar
 
 # Run the jar file
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/to-do-springboot.jar"]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/pushtest.jar"]
 
