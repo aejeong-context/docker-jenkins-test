@@ -14,6 +14,6 @@ public class HomeController {
     @GetMapping("/aejeong")
     public String ae(){
         System.out.println("gggg");
-        return "ㅎㅎㅎㅎㅎㅎㅎqqqㅎㅎㅎㅎaz";
+        return "ㅎㅎㅎㅎㅎㅎㅎqqqㅎㅎㅎaaㅎaz11111";
     }
 }
