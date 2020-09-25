@@ -9,7 +9,7 @@ public class HomeController {
     @GetMapping("/")
     public String home(){
         System.out.println("aejeong!!!!!");
-        return "hello~~~~~~~~~~~~~~~~~qqqqq";
+        return "과연?";
     }
     @GetMapping("/aejeong")
     public String ae(){
