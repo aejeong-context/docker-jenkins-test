@@ -8,7 +8,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(){
-        System.out.println("aejeong!!!!!   111111");
+        System.out.println("aejeong!!!!!   11111z1");
         return "과연?";
     }
     @GetMapping("/aejeong")
